@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121214;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Principal do Player */
+.player-card {
+  background: linear-gradient(180deg, #28283e 0%, #1c1c2b 100%);
+  width: 340px;
+  padding: 24px;
+  border-radius: 28px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagem da Capa */
+.cover-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cover-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Badge 'Pausado' / 'Tocando' */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Título e Artista */
+.track-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.track-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.track-info p {
+  color: #a0a0b0;
+  font-size: 0.95rem;
+}
+
+/* Barra de Progresso */
+.progress-container {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+#progress-bar {
+  width: 100%;
+  accent-color: #7c5cff;
+  cursor: pointer;
+  height: 4px;
+  background-color: #3e3e52;
+  border-radius: 2px;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #a0a0b0;
+  margin-top: 8px;
+}
+
+/* Botões de Controle */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
+}
+
+.btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  color: #7c5cff;
+  transform: scale(1.1);
+}
+
+.play-btn {
+  width: 64px;
+  height: 64px;
+  background-color: #7c5cff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 8px 20px rgba(124, 92, 255, 0.4);
+}
+
+.play-btn:hover {
+  color: #ffffff;
+  background-color: #6a49ff;
+  transform: scale(1.05);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="script.js">
+  <title>Music Player - SESI Beats</title>
+  <!-- Ícones do FontAwesome para os botões -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="player-card">
+    <!-- Capa do Álbum com Badge -->
+    <div class="cover-container">
+      <span class="badge" id="status-badge">Pausado</span>
+      <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&auto=format&fit=crop" alt="Capa da Música" id="cover-img">
+    </div>
+
+    <!-- Informações da Música -->
+    <div class="track-info">
+      <h2 id="title">Musica Boa</h2>
+      <p id="artist">SESI Beats</p>
+    </div>
+
+    <!-- Barra de Progresso -->
+    <div class="progress-container">
+      <input type="range" id="progress-bar" value="0" min="0" step="1">
+      <div class="time-info">
+        <span id="current-time">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <!-- Controles -->
+    <div class="controls">
+      <button class="btn" id="prev-btn" title="Retroceder"><i class="fas fa-step-backward"></i></button>
+      <button class="btn play-btn" id="play-btn" title="Tocar/Pausar"><i class="fas fa-play" id="play-icon"></i></button>
+      <button class="btn" id="next-btn" title="Avançar"><i class="fas fa-step-forward"></i></button>
+    </div>
+
+    <!-- Elemento de Áudio Oculto -->
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
